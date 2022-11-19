@@ -1,8 +1,8 @@
-import { HomeScreen } from "components/screens/HomeScreen";
+import { HomeScreen } from 'components/screens/HomeScreen';
 
 export const Home = () => {
   return (
-    <HomeScreen></HomeScreen>
+    <HomeScreen />
   );
 };
 

@@ -1,9 +1,11 @@
-import React from "react";
+import React from 'react';
+
 import { GameFieldProps } from './types';
 
 export const GameField: React.FC<GameFieldProps> = (props) => {
   return (
-    <div className="GameField"
+    <div
+      className="GameField"
       onClick={props.onClick}
       onContextMenu={(event) => {
         // Right Click
@@ -11,6 +13,6 @@ export const GameField: React.FC<GameFieldProps> = (props) => {
 
         props.onRightClick && props.onRightClick(event);
       }}
-    ></div>
+    />
   );
 };
