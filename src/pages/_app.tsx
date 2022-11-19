@@ -1,7 +1,11 @@
 import 'normalize.css';
 
-import type { AppProps } from 'next/app';
+import { AppPropsWithLayout } from 'types/common';
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
-}
+export const App = ({ Component, pageProps }: AppPropsWithLayout) => {
+  const getLayout = Component.getLayout ?? ((page) => page);
+
+  return getLayout(<Component {...pageProps} />);
+};
+
+export default App;

@@ -1,0 +1,11 @@
+.Error404 {
+  width: 100%;
+  background-color: rgba(250, 247, 235, 1);
+  .Wrapper {
+    display: flex;
+    min-height: 100vh;
+    .Content {
+      margin: auto;
+    }
+  }
+}
