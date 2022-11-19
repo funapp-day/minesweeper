@@ -1,15 +1,11 @@
+import { Title } from 'components/common/Title';
 import { Error404Screen } from 'components/screens/ErrorScreen/404';
 import { CONFIG } from 'config/common';
-import Head from 'next/head';
 
 export const Error404 = () => {
   return (
     <>
-      <Head>
-        <title key={'title'}>
-          { `${CONFIG.GAME_NAME} :: ${CONFIG.PAGE_TITLE.ERROR[404]}` }
-        </title>
-      </Head>
+      <Title title={CONFIG.PAGE_TITLE.ERROR[404]} />
       <Error404Screen />
     </>
   );
